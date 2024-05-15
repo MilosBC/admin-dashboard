@@ -3,6 +3,7 @@
     --yellow: #FACC15;
     --white: #FFFFFF;
     --grey: #E2E8F0;
+    --pink: #FDA4AF;
 }
 
 * {
@@ -127,7 +128,8 @@ margin-left: -1px;
 }
 
 .user-thumbnail img:nth-of-type(2),
-.user-info img{
+.user-info img,
+.small-kitty{
     background-color: var(--yellow);
     border-radius: 50%;
    padding: 5px 3px;
@@ -198,5 +200,158 @@ button {
     grid-template-columns: 600px 400px;
     column-gap: 400px;
     row-gap: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
+
+.main-content {
+    background-color: var(--grey);
+    padding-top: 25px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 640px 400px;
+    column-gap: 150px;
+}
+
+.main-content h3 {
+    margin-bottom: 12px;
+    margin-left: 3px;
+}
+
+.announcements-and-trending {
+   grid-column: 2/3;
+   grid-row: 1/3;
+   margin-top: -10px; 
+   
+   
+}
+
+.projects {
+    display: grid;
+   
+   grid-template-columns: repeat(2, 320px);
+   gap: 20px;
+   grid-column: 1/2;
+    
+   
+}
+
+.project {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: var(--white);
+    padding: 25px 30px;
+    border-left: 10px solid var(--yellow);
+    width: 320px;
+
+
+
+    
+}
+
+.project svg {
+    fill: black;
+    position: relative;
+    left: 85px;
+    margin-top: 30px;
+    margin-bottom: 1px;
+    
+}
+
+
+
+
+.announcement-wrapper {
+background-color: var(--white);
+width: 280px;
+padding: 20px;
+
+}
+
+.announcement-wrapper h4 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+hr {
+    margin: 10px 0;
+    
+}
+
+.announcement-wrapper p {
+    text-align: justify;
+}
+
+.announcements h3 {
+    margin-top: 12px;
+}
+
+.trending-wrapper {
+
+    background-color: var(--white);
+    width: 280px;
+    padding: 20px;
+}
+
+.trending-wrapper > ul > li  {
+display: grid;
+grid-template-columns: repeat(2, 70px);
+gap: 10px;
+margin: 20px 0;
+
+}
+
+.trending-wrapper span {
+    font-size: 1.1rem;
+    text-wrap: nowrap;
+    font-weight: 400;
+}
+
+.small-kitty {
+    position: relative;
+    right: 5px;
+}
+
+.small-doggy {
+    background-color: var(--blue);
+    border-radius: 50%;
+   padding: 5px 3px;
+   height: 57px;
+}
+
+.small-robot {
+    background-color: var(--grey);
+    border-radius: 50%;
+   padding: 5px 3px;
+   height: 57px;
+}
+
+.small-penguin {
+    background-color: var(--pink);
+    border-radius: 50%;
+    padding: 5px;
+    height: 57px;
+}
+
+.trending-text {
+    position: relative;
+    top: 6px;
+}
+
+.trending-wrapper p {
+    font-weight: 700;
+}
+
+.trending h3 {
+    margin-top: 23px;
+}
+
+
+
+
+
+
+
+
+
+
 
