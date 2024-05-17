@@ -394,7 +394,7 @@ margin: 20px 0;
     top: 13px;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1440px) {
 
     .header {
         column-gap: 120px;
