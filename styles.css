@@ -252,6 +252,8 @@ button {
     border-left: 10px solid var(--yellow);
     width: 320px;
     box-shadow: 5px 3px 11px gray;
+    text-align: justify;
+    hyphens: auto;
 
 
 
@@ -289,6 +291,8 @@ hr {
 
 .announcement-wrapper p {
     text-align: justify;
+   
+   hyphens: auto;
 }
 
 .announcements h3 {
@@ -355,10 +359,45 @@ margin: 20px 0;
 
 .trending-wrapper p {
     font-weight: 700;
+ 
 }
 
 .trending h3 {
     margin-top: 23px;
+}
+
+.footer {
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+   
+    justify-content: center;
+    border-top: 10px solid var(--yellow);
+   
+     
+}
+
+.fa-github {
+    transition: transform .5s ease-in-out;
+    font-size: 2.3rem; 
+    margin-left: 12px; 
+    margin-top: 19px;
+    color: black;
+    position: relative;
+    bottom: 28px;
+    left: 1px;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg);
+}
+
+.footer p,
+.footer a {
+    position: relative;
+    top: 10px;
 }
 
 @media (max-width: 1380px) {
