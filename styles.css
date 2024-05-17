@@ -44,6 +44,7 @@ ul {
     background-color: var(--blue);
     padding-top: 20px;
     padding-left: 20px;
+   
 }
 
 h1,
@@ -112,11 +113,13 @@ h1 {
 }
 
 .search input {
-    width: 550px;
+    width: 450px;
     height: 26px;
     background-color:var(--grey);
     border: none;
     border-radius: 20px;
+    position: relative;
+    right: 100px;
 
 }
 
@@ -197,11 +200,15 @@ button {
 
 .header {
     display: grid;
-    grid-template-columns: 600px 400px;
-    column-gap: 400px;
+    grid-template-columns: 500px 400px;
+    column-gap: 150px;
     row-gap: 20px;
     padding-bottom: 15px;
     padding-top: 10px;
+    box-shadow: 0 5px 11px gray;
+    
+    z-index: 0;
+    
 }
 
 .main-content {
@@ -210,7 +217,8 @@ button {
     padding-left: 20px;
     display: grid;
     grid-template-columns: 640px 400px;
-    column-gap: 150px;
+    column-gap: 90px;
+    padding-bottom: 25px;
 }
 
 .main-content h3 {
@@ -220,8 +228,8 @@ button {
 
 .announcements-and-trending {
    grid-column: 2/3;
-   grid-row: 1/3;
-   margin-top: -10px; 
+   grid-row: 1/4;
+   margin-top: -9px; 
    
    
 }
@@ -243,6 +251,7 @@ button {
     padding: 25px 30px;
     border-left: 10px solid var(--yellow);
     width: 320px;
+    box-shadow: 5px 3px 11px gray;
 
 
 
@@ -265,6 +274,7 @@ button {
 background-color: var(--white);
 width: 280px;
 padding: 20px;
+box-shadow: 3px 3px 11px gray;
 
 }
 
@@ -290,6 +300,7 @@ hr {
     background-color: var(--white);
     width: 280px;
     padding: 20px;
+    box-shadow: 3px 3px 11px gray
 }
 
 .trending-wrapper > ul > li  {
@@ -337,12 +348,39 @@ margin: 20px 0;
     top: 6px;
 }
 
+.trending-wrapper {
+    height: 383px;
+    padding-top: 25px;
+}
+
 .trending-wrapper p {
     font-weight: 700;
 }
 
 .trending h3 {
     margin-top: 23px;
+}
+
+@media (max-width: 1380px) {
+
+    .header {
+        column-gap: 120px;
+    }
+    .main-content {
+        column-gap: 60px;
+    }
+}
+
+@media (max-width: 1353px) {
+
+    .header {
+        column-gap: 90px;
+    }
+
+    .main-content {
+        column-gap: 48px;
+    }
+  
 }
 
 
