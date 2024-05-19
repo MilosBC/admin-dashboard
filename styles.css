@@ -200,7 +200,7 @@ button {
 .header {
     display: grid;
     grid-template-columns: 500px 400px;
-    column-gap: 150px;
+    column-gap: 220px;
     row-gap: 20px;
     padding-bottom: 15px;
     padding-top: 10px;
@@ -216,7 +216,7 @@ button {
     padding-left: 20px;
     display: grid;
     grid-template-columns: 640px 400px;
-    column-gap: 90px;
+    column-gap: 130px;
     padding-bottom: 25px;
 }
 
@@ -250,6 +250,7 @@ button {
     box-shadow: 5px 3px 11px gray;
     text-align: justify;
     hyphens: auto;
+    word-spacing: 0.2rem;
 
 
 
