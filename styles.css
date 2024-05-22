@@ -134,7 +134,10 @@ margin-left: -1px;
 .small-kitty{
     background-color: var(--yellow);
     border-radius: 50%;
-   padding: 5px 3px;
+    object-fit: cover;
+    padding: 5px 3px;
+   
+  
    
 }
 
@@ -199,7 +202,7 @@ button {
 
 .header {
     display: grid;
-    grid-template-columns: 500px 400px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     column-gap: 220px;
     row-gap: 20px;
     padding-bottom: 15px;
@@ -215,8 +218,8 @@ button {
     padding-top: 25px;
     padding-left: 20px;
     display: grid;
-    grid-template-columns: 640px 400px;
-    column-gap: 130px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
     padding-bottom: 25px;
 }
 
@@ -229,13 +232,14 @@ button {
    grid-column: 2/3;
    grid-row: 1/4;
    margin-top: -9px; 
+  
    
    
 }
 
 .projects {
     display: grid;
-   grid-template-columns: repeat(2, 320px);
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
    gap: 20px;
    grid-column: 1/2;
 }
@@ -246,7 +250,7 @@ button {
     background-color: var(--white);
     padding: 25px 30px;
     border-left: 10px solid var(--yellow);
-    width: 320px;
+   
     box-shadow: 5px 3px 11px gray;
     text-align: justify;
     hyphens: auto;
@@ -317,14 +321,16 @@ margin: 20px 0;
 
 .small-kitty {
     position: relative;
-    right: 5px;
+    right: 2px;
+    
 }
 
 .small-doggy {
     background-color: var(--blue);
     border-radius: 50%;
-   padding: 5px 3px;
+   padding: 8px 3px;
    height: 57px;
+   
 }
 
 .small-robot {
@@ -332,6 +338,7 @@ margin: 20px 0;
     border-radius: 50%;
    padding: 5px 3px;
    height: 57px;
+   
 }
 
 .small-penguin {
@@ -395,13 +402,19 @@ margin: 20px 0;
     top: 13px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1574px) {
+    .user-info {
+        display: none;
+    }
 
     .header {
-        column-gap: 120px;
+        row-gap: 20px;
     }
+}
+
+@media (max-width: 1194px) {
     .main-content {
-        column-gap: 55px;
+        column-gap: 20px;
     }
 }
 
