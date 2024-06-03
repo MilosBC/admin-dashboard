@@ -1,3 +1,4 @@
+
 :root {
     --blue: #1992D4;
     --yellow: #FACC15;
@@ -250,7 +251,6 @@ button {
     background-color: var(--white);
     padding: 25px 30px;
     border-left: 10px solid var(--yellow);
-   
     box-shadow: 5px 3px 11px gray;
     text-align: justify;
     hyphens: auto;
@@ -269,6 +269,10 @@ button {
     margin-bottom: 1px;
     
 }
+
+
+
+
 
 .announcement-wrapper {
 background-color: var(--white);
@@ -417,16 +421,3 @@ margin: 20px 0;
         column-gap: 20px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
